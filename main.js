@@ -37,7 +37,7 @@ function drawToDoList() {
 
   for (let i = 0; i < todos.length; i++) {
     const listItem = document.createElement("li");
-    listItem.textContent = todos[i].text;
+    
 
     if (todos[i].isDone === true) {
       listItem.classList.add("done");
@@ -65,7 +65,7 @@ function drawToDoList() {
 
     listItem.appendChild(todoDoneButton);
     listItem.appendChild(todoDeleteButton);
-
+    listItem.append(todos[i].text);
     todoList.appendChild(listItem);
   }
 }

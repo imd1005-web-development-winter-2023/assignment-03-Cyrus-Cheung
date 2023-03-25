@@ -49,7 +49,29 @@ main {
 .list1 {
   display: flex;
   padding: 1vh;
+  flex-direction: row;
 }
+
+.todolist1 {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+  padding: 0;
+  
+
+  list-style-type: none;
+}
+
+.todolist1 * {
+  display: flex;
+  gap: 1vh;
+  overflow-wrap: break-word; 
+  max-width: 75vh;
+}
+
+
+
+
 
 /*
   Screen reader text utility class
