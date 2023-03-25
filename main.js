@@ -86,7 +86,7 @@ function drawToDoList() {
 function doneTodo(event) {
   console.log("Marked as done");
 
-  toDeleteIndex = event.target.dataset.index;
+  todoDeleteIndex = event.target.dataset.index;
 
   console.log("INDEX: ", todoDeleteIndex);
 
