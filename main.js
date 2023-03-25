@@ -1,7 +1,7 @@
 const form = document.querySelector(".form1");
 const inputTodo = document.querySelector("#inputTodo");
 
-const noLab = document.querySelector(".noLab");
+const emptyState = document.querySelector(".emptyState");
 const todoList = document.querySelector(".todolist1");
 
 const todos = [];
@@ -77,9 +77,9 @@ function drawToDoList() {
   }
 
   if (todos.length < 1) {
-    noLab.textContent = "There's nothing here...";
+    emptyState.style.display = "block"
   } else {
-    noLab.textContent = "";
+    emptyState.style.display = "none"
   }
 }
 
