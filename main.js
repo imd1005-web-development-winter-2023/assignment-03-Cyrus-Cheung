@@ -1,6 +1,7 @@
 const form = document.querySelector(".form1");
 const inputTodo = document.querySelector("#inputTodo");
 
+const noLab = document.querySelector(".noLab");
 const todoList = document.querySelector(".todolist1");
 
 const todos = [];
@@ -73,6 +74,12 @@ function drawToDoList() {
     
     listItem.append(itemTextC);
     todoList.appendChild(listItem);
+  }
+
+  if (todos.length < 1) {
+    noLab.textContent = "There's nothing here...";
+  } else {
+    noLab.textContent = "";
   }
 }
 
