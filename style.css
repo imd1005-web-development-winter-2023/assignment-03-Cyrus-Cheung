@@ -31,10 +31,10 @@ body {
   background-color: var(--body-background-colour);
 }
 
-main {
+.hero {
   min-height: 100vh;
   margin: 10vh;
-  max-width: 50vh;;
+  max-width: 50vw;;
 
   display: flex;
   flex-direction: column;
@@ -70,14 +70,20 @@ main {
 }
 
 .todolist1 * {
-  display: flex;
+  display: inline-block;
   gap: 1vh;
-  overflow-wrap: break-word; 
+  overflow-wrap: break-word;
   max-width: 100%;
 }
 
-.todolist1 p {
+.todolist1 div {
   display: inline-block;
+  max-width: 100%;
+}
+
+.todolist1 div p {
+  display: inline-block;
+  overflow-wrap: break-word;
   max-width: 100%;
 }
 

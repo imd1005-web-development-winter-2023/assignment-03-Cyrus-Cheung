@@ -63,12 +63,14 @@ function drawToDoList() {
 
     todoDoneButton.addEventListener("click", doneTodo);
 
+    const itemTextC = document.createElement("div");
     const itemText = document.createElement("p");
     itemText.append(todos[i].text);
+    itemTextC.append(itemText)
 
-    listItem.appendChild(todoDoneButton);
     listItem.appendChild(todoDeleteButton);
-    listItem.append(itemText);
+    listItem.appendChild(todoDoneButton);
+    listItem.append(itemTextC);
     todoList.appendChild(listItem);
   }
 }
