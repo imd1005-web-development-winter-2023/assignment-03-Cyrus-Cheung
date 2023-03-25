@@ -1,5 +1,5 @@
 const form = document.querySelector(".form1");
-const todoTextFromForm = document.querySelector("#todo-item");
+const inputTodo = document.querySelector("#inputTodo");
 
 const todoList = document.querySelector(".todolist1");
 
@@ -75,10 +75,10 @@ function deleteTodo(event) {
 function addTodo(event) {
   event.preventDefault();
 
-  todoTextFromForm.ariaValueMax;
+  inputTodo.ariaValueMax;
 
   todos.push({
-    text: todoTextFromForm.value,
+    text: inputTodo.value,
     isDone: false,
   });
 
