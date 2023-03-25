@@ -48,6 +48,7 @@ body {
 .form1 {
   display: flex;
   padding: 1vh;
+  gap: 3%;
 }
 
 .list1 {
