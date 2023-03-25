@@ -75,7 +75,7 @@ body {
   flex-direction: row;
   flex-wrap: nowrap;
 
-  gap: 2%;
+  gap: 1em;
   width: 100%;
 }
 
@@ -95,7 +95,7 @@ body {
 .todolist1 button {
   display: inline-block;
   align-items: center;
-  width: 16%;
+  width: 4em;
 }
 
 
