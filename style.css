@@ -79,6 +79,21 @@ main {
   max-width: 100%;
 }
 
+.todolist1 button {
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*
