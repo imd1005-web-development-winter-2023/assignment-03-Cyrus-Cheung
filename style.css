@@ -22,6 +22,18 @@
   --body-background-colour: #ccc;
 }
 
+
+@font-face {
+  font-family: genshin;
+  src: url(ja-jp.ttf);
+}
+
+* {
+  font-family: genshin;
+}
+
+
+
 /*
   PAGE / BODY
 */
