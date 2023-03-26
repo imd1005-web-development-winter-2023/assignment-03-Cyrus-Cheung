@@ -59,6 +59,23 @@ body {
   background-color: #fff;
 }
 
+.hero {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.besideForm {
+  display: flex;
+  align-items: center;
+}
+
+.deleteAll {
+  border: none;
+  background-color: #eeeeee;
+}
+
 .form1 {
   display: flex;
   padding: 1em;

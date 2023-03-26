@@ -122,6 +122,17 @@ function deleteTodo(event) {
   drawToDoList();
 }
 
+function deleteAll() {
+  console.log(todos.length);
+  console.log("Delete all");
+  
+  while (todos.length > 0) {
+    todos.pop();
+  }
+
+  drawToDoList();
+}
+
 function addTodo(event) {
   event.preventDefault();
 

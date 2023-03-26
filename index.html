@@ -43,11 +43,21 @@
       <header>Todo List</header>
 
       <section class="content">
-        <form class="form1">
-          <input class="submit" type="submit" value="Add todo" />
-          <label class="sr-only" for="inputTodo">To do description:</label>
-          <input name="inputTodo" id="inputTodo" type="text" required />
-        </form>
+
+        <section class="hero">
+
+          <form class="form1">
+            <input class="submit" type="submit" value="Add todo" />
+            <label class="sr-only" for="inputTodo">To do description:</label>
+            <input name="inputTodo" id="inputTodo" type="text" required />
+          </form>
+
+          <div class="besideForm">
+            <p>hey</p>
+            <button class="clear" onclick="deleteAll()">Delete all</button>
+          </div>
+
+        </section>
 
         <ul class="todolist1"></ul>
 
@@ -57,6 +67,7 @@
         </section>
 
       </section>
+
     </main>
 
     <!-- This is where we add our awesome JavaScript code -->
