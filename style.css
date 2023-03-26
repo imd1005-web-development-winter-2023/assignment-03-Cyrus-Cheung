@@ -47,6 +47,22 @@ body {
   box-sizing: border-box;
 }
 
+header {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+  padding: 0.5em;
+  background-color: #eeeeee;
+  color: #000000;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+
+.logo {
+  height: 3em;
+}
+
 .content {
   min-height: 0vh;
   margin: 5em;
@@ -69,7 +85,7 @@ body {
 
 
 .blurb {
-  font-size: 0.8em;
+  font-size: 1em;
 }
 
 .clear {
