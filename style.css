@@ -30,9 +30,9 @@
 
 * {
   font-family: genshin;
-  
+  /*
   border: 1px solid red;
-  
+  */
 }
 
 
@@ -67,22 +67,16 @@ body {
   flex-wrap: wrap;
 }
 
-.besideForm {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1em;
-  flex-wrap: wrap;
-  gap: 1em;
-}
 
 .blurb {
   font-size: 0.8em;
 }
 
 .clear {
+  display: none;
   border: none;
   background-color: #ffaaaa;
+  margin: 1em;
 }
 
 .clear:hover {
