@@ -123,13 +123,8 @@ function deleteTodo(event) {
 }
 
 function deleteAll() {
-  console.log(todos.length);
   console.log("Delete all");
-  
-  while (todos.length > 0) {
-    todos.pop();
-  }
-
+  todos.length = 0;
   drawToDoList();
 }
 
