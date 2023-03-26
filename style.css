@@ -64,6 +64,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
+  flex-wrap: wrap;
 }
 
 .besideForm {
@@ -71,7 +72,8 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1em;
-  width: 100%;
+  flex-wrap: wrap;
+  gap: 1em;
 }
 
 .blurb {
@@ -91,6 +93,7 @@ body {
   display: flex;
   padding: 1em;
   gap: 1em;
+  flex-wrap: wrap;
 }
 
 .submit {
