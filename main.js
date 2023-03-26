@@ -47,21 +47,17 @@ function drawToDoList() {
     const todoDeleteButton = document.createElement("button");
     todoDeleteButton.textContent = "Delete";
     todoDeleteButton.classList.add("todoDeleteButton");
-
     todoDeleteButton.dataset.index = i;
-
     todoDeleteButton.addEventListener("click", deleteTodo);
 
     const todoDoneButton = document.createElement("button");
-
     if (todos[i].isDone === true) {
       todoDoneButton.textContent = "unDone";
     } else {
       todoDoneButton.textContent = "Done";
     }
-
+    todoDoneButton.classList.add("todoDoneButton");
     todoDoneButton.dataset.index = i;
-
     todoDoneButton.addEventListener("click", doneTodo);
 
     const itemTextC = document.createElement("div");
