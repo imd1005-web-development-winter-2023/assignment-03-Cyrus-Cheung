@@ -30,9 +30,9 @@
 
 * {
   font-family: genshin;
-  
+  /*
   border: 1px solid red;
-  
+  */
 }
 
 
@@ -68,7 +68,14 @@ body {
 
 .besideForm {
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  padding: 1em;
+  width: 100%;
+}
+
+.blurb {
+  font-size: 0.8em;
 }
 
 .clear {
