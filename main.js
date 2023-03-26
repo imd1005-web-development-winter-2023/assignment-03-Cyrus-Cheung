@@ -1,5 +1,6 @@
 const form = document.querySelector(".form1");
 const inputTodo = document.querySelector("#inputTodo");
+const clear = document.querySelector(".clear");
 
 const emptyState = document.querySelector(".emptyState");
 const todoList = document.querySelector(".todolist1");
@@ -91,10 +92,11 @@ function drawToDoList() {
   if (todos.length < 1) {
     emptyState.style.display = "block"
     todoList.style.display = "none";
-    
+    clear.style.display = "none";
   } else {
     emptyState.style.display = "none"
     todoList.style.display = "flex";
+    clear.style.display = "flex";
   }
 }
 
