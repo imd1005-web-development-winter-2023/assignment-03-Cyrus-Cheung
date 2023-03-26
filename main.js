@@ -46,6 +46,9 @@ function drawToDoList() {
 
     const todoDeleteButton = document.createElement("button");
     todoDeleteButton.textContent = "Delete";
+    if (todos[i].isDone === true) {
+      todoDeleteButton.classList.add("buttonDoneDelete");
+    }
     todoDeleteButton.classList.add("todoDeleteButton");
     todoDeleteButton.dataset.index = i;
     todoDeleteButton.addEventListener("click", deleteTodo);
@@ -56,15 +59,19 @@ function drawToDoList() {
     if (todos[i].isDone === true) {
       todoDoneButton.classList.add("buttonDone");
     }
-
     todoDoneButton.classList.add("todoDoneButton");
     todoDoneButton.dataset.index = i;
     todoDoneButton.addEventListener("click", doneTodo);
 
     const itemTextC = document.createElement("div");
     const itemText = document.createElement("p");
+
+    if (todos[i].isDone === true) {
+      itemText.classList.add("doneText");
+    }
+
     itemText.append(todos[i].text);
-    itemTextC.append(itemText)
+    itemTextC.append(itemText);
 
     listItem.appendChild(todoDoneButton);
     listItem.append(itemTextC);
@@ -72,6 +79,10 @@ function drawToDoList() {
 
     if (i % 2 === 0) {
       listItem.classList.add("listOdd");
+    }
+
+    if (todos[i].isDone === true) {
+      listItem.classList.add("doneItem");
     }
 
     todoList.appendChild(listItem);
