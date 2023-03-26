@@ -49,13 +49,14 @@ function drawToDoList() {
     todoDeleteButton.classList.add("todoDeleteButton");
     todoDeleteButton.dataset.index = i;
     todoDeleteButton.addEventListener("click", deleteTodo);
+    
 
     const todoDoneButton = document.createElement("button");
+    todoDoneButton.textContent = "Done";
     if (todos[i].isDone === true) {
-      todoDoneButton.textContent = "unDone";
-    } else {
-      todoDoneButton.textContent = "Done";
+      todoDoneButton.classList.add("buttonDone");
     }
+
     todoDoneButton.classList.add("todoDoneButton");
     todoDoneButton.dataset.index = i;
     todoDoneButton.addEventListener("click", doneTodo);
@@ -65,14 +66,14 @@ function drawToDoList() {
     itemText.append(todos[i].text);
     itemTextC.append(itemText)
 
-    listItem.appendChild(todoDeleteButton);
     listItem.appendChild(todoDoneButton);
-    
+    listItem.append(itemTextC);
+    listItem.appendChild(todoDeleteButton);
+
     if (i % 2 === 0) {
       listItem.classList.add("listOdd");
     }
 
-    listItem.append(itemTextC);
     todoList.appendChild(listItem);
   }
 

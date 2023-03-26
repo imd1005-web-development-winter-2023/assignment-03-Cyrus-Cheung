@@ -125,13 +125,17 @@ body {
   background-color: #ff5555;
 }
 
-
 .todoDoneButton {
   border: none;
+  background-color: #eeeeee;
 }
 
 .todoDoneButton:hover {
-  background-color: #88ff88;
+  background-color: #aaaaaa;
+}
+
+.buttonDone {
+  background-color: #55ff55;
 }
 
 
