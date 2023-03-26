@@ -78,8 +78,11 @@ function drawToDoList() {
 
   if (todos.length < 1) {
     emptyState.style.display = "block"
+    todoList.style.display = "none";
+    
   } else {
     emptyState.style.display = "none"
+    todoList.style.display = "flex";
   }
 }
 
