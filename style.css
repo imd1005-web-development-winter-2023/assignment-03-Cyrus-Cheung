@@ -30,9 +30,9 @@
 
 * {
   font-family: genshin;
-  /*
+  
   border: 1px solid red;
-  */
+  
 }
 
 
@@ -47,7 +47,7 @@ body {
   box-sizing: border-box;
 }
 
-.hero {
+.content {
   min-height: 0vh;
   margin: 5em;
 
