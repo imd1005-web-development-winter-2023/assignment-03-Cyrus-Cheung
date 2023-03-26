@@ -68,6 +68,10 @@ function drawToDoList() {
     listItem.appendChild(todoDeleteButton);
     listItem.appendChild(todoDoneButton);
     
+    if (i % 2 === 0) {
+      listItem.classList.add("listOdd");
+    }
+
     listItem.append(itemTextC);
     todoList.appendChild(listItem);
   }

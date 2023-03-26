@@ -99,6 +99,10 @@ body {
   width: 100%;
 }
 
+.listOdd {
+  background-color: #eeeeee;
+}
+
 .todolist1 div {
   display: flex;
   flex-direction: row;
