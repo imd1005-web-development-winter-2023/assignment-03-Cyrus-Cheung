@@ -18,6 +18,9 @@
 
     <!-- Set the Favicon  -->
     <link rel="icon" href="./images/favicon/rocket.svg" type="image/svg+xml" />
+  
+    <!-- jsDelivr :: Sortable :: Latest (https://www.jsdelivr.com/package/npm/sortablejs) -->
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
   </head>
   <body>
     <!--
@@ -35,8 +38,42 @@
       - Have you conducted a code review and left a GitHub Issue on your team member's repo?
 
     -->
+
+
+    <header>
+      <a href="index.html"><img class="logo" src="dodo_logo.png" alt="DodoList logo"></a>
+      <p class="blurb">Click and drag tasks to reorder them!</p>
+    </header>
+
     <main>
-      <div id="app"></div>
+      
+      <section class="content">
+        <h2 class="sr-only">Todo List</h2>
+        
+        <section class="hero">
+          <h2 class="sr-only">Input form</h2>
+
+          <form class="form1">
+            <input class="submit" type="submit" value="Add todo" />
+            <label class="sr-only" for="inputTodo">To do description:</label>
+            <input name="inputTodo" id="inputTodo" type="text" required />
+            
+          </form>
+
+          <button class="clear" onclick="deleteAll()">Delete all</button>
+          
+        </section>
+
+        <ul class="todolist1"></ul>
+
+        <section class="emptyState">
+          <h2 class="sr-only">No tasks in list</h2>
+          <h2>There's nothing here...</h2>
+          <p>Add tasks using the bar above!</p>
+        </section>
+
+      </section>
+
     </main>
 
     <!-- This is where we add our awesome JavaScript code -->
